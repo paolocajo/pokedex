@@ -141,11 +141,12 @@ body>h1{
 }
 .pokedex-controles picture p{
     position: absolute;
-    bottom:20px;
+    bottom:15px;
+    font-weight:bolder;
     left: 50%;
     margin: 0 -12px; 
     /*  !insertar margin dinámico por js, el ancho del elemento */
-    color: #1D1D1A;
+    color: #474747;
 }
 
 .buscar-pokemon{
