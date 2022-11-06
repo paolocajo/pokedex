@@ -6,16 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="./css/pokedex.css">
-    
+    <link rel="shortcut icon" href="./src/pokeball.jpg">
 </head>
+
 <body>
-    <h1>Pokedex</h1>
-    <input type="text" placeholder="N#/Nombre de pokémon" id="pokeName" name="pokeName">
-    <img src="./img/pokeball.jpg" alt="Pokeball" id="pokeImg" width="150px">
-    <button class="btnBuscar" onclick="mostrarPokemon()">Buscar</button>
-
-
+    <video class="fondo-video" src="./src/pokemon.mp4" autoplay muted loop></video>
+    <h1>POKÉDEX</h1>
+    <section class="contenedor-pokedex">
+        <div class="pokedex-contenedor-controles">
+            <div class="pokedex-decoracion">
+                <div class="circulo-borde-grande">
+                    <div class="circulo-interno"></div>
+                </div>
+                <div class="contenedor-circulos-pequenos">
+                    <div class="circulo-borde-pequeno">
+                        <div class="circulo-pequeno fondo-rojo"></div>
+                    </div>
+                    <div class="circulo-borde-pequeno">
+                        <div class="circulo-pequeno"></div>
+                    </div>
+                    <div class="circulo-borde-pequeno">
+                        <div class="circulo-pequeno"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pokedex-bisagra">
+            </div>
+            <div class="pokedex-controles">
+                <picture>
+                    <img src="./src/pokeball.jpg" alt="Pokemon" id="imagen-pokemon">
+                    <p id="codigo-nombre-pokemon">???</p>
+                </picture>
+                <div class="buscar-pokemon">
+                    <input type="text" placeholder="N#/Nombre de pokémon" id="nombre-pokemon" name="nombre-pokemon">
+                    <button class="boton-buscar" onclick="mostrarPokemon()"><img src="./src/icono-buscar.png" alt="buscar"></button>
+                </div>
+                <div class="botones-laterales">
+                    <button class="boton-izquierda" >◀</button>
+                    <button class="boton-derecha" >▶</button>
+                </div>
+            </div>
+        </div>
+        <div class="pokedex-contenedor-info">
+            <div class="pokedex-info-principal">
+                <div class="scroll">
+                    <p class="titulo-info">TYPE:</p>
+                    <ul>
+                        <li>???</li>
+                        <li>???</li>
+                    </ul>
+                    <p class="titulo-info">ABILITIES:</p>
+                        <ul>
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                    <p class="titulo-info">MOVES:</p>
+                        <ul>
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="pokedex-info-secundaria">
+                <div>
+                    <p class="titulo-info">HEIGHT: </p>
+                    <span>??? KG</span>
+                </div>
+                <div>
+                    <p class="titulo-info">WEIGHT: </p>
+                    <span>??? M</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class=sonido>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fAP-lGPqHbA?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+   
     <!-- JS -->
-    <script src="./4.-pokedex.js"></script>
+    <script src="./js/pokedex.js"></script>
 </body>
 </html>
