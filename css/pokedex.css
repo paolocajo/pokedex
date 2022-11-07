@@ -134,19 +134,19 @@ body>h1{
 .pokedex-controles picture img{
     background-color: #DEDEDE;
     padding: 10px;
+    padding-bottom: 20px;
     width: 245px;
-    height: 190px;
+    height: 200px;
     object-fit: cover;
     border-radius: 25px;
 }
 .pokedex-controles picture p{
     position: absolute;
-    bottom:15px;
+    bottom:5px;
     font-weight:bolder;
-    left: 50%;
-    margin: 0 -12px; 
-    /*  !insertar margin dinámico por js, el ancho del elemento */
-    color: #474747;
+    width: 100%;
+    text-align: center;
+    color: #100303;
 }
 
 .buscar-pokemon{

@@ -38,12 +38,12 @@
                     <p id="codigo-nombre-pokemon">???</p>
                 </picture>
                 <div class="buscar-pokemon">
-                    <input type="text" placeholder="N#/Nombre de pokémon" id="nombre-pokemon" name="nombre-pokemon">
+                    <input type="text" placeholder="N#/NOMBRE DE POKÉMON" id="nombre-pokemon" name="nombre-pokemon">
                     <button class="boton-buscar" onclick="mostrarPokemon()"><img src="./src/icono-buscar.png" alt="buscar"></button>
                 </div>
                 <div class="botones-laterales">
-                    <button class="boton-izquierda" >◀</button>
-                    <button class="boton-derecha" >▶</button>
+                    <button class="boton-izquierda" onclick="anteriorPokemon()">◀</button>
+                    <button class="boton-derecha" onclick="siguientePokemon()" >▶</button>
                 </div>
             </div>
         </div>
@@ -51,34 +51,34 @@
             <div class="pokedex-info-principal">
                 <div class="scroll">
                     <p class="titulo-info">TYPE:</p>
-                    <ul>
+                    <ul id="tipo"> 
                         <li>???</li>
                         <li>???</li>
                     </ul>
                     <p class="titulo-info">ABILITIES:</p>
-                        <ul>
-                            <li>???</li>
-                            <li>???</li>
-                            <li>???</li>
-                            <li>???</li>
-                        </ul>
+                    <ul id="habilidades">
+                        <li>???</li>
+                        <li>???</li>
+                        <li>???</li>
+                        <li>???</li>
+                    </ul>
                     <p class="titulo-info">MOVES:</p>
-                        <ul>
-                            <li>???</li>
-                            <li>???</li>
-                            <li>???</li>
-                            <li>???</li>
-                        </ul>
+                    <ul id="movimientos">
+                        <li>???</li>
+                        <li>???</li>
+                        <li>???</li>
+                        <li>???</li>
+                    </ul>
                 </div>
             </div>
             <div class="pokedex-info-secundaria">
                 <div>
                     <p class="titulo-info">HEIGHT: </p>
-                    <span>??? KG</span>
+                    <span id="altura">??? M</span>
                 </div>
                 <div>
                     <p class="titulo-info">WEIGHT: </p>
-                    <span>??? M</span>
+                    <span id="peso">??? KG</span>
                 </div>
             </div>
         </div>
