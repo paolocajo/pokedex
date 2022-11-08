@@ -10,7 +10,7 @@ const mostrarPokemon = () => {
 const peticionAPI = (url) => {
     fetch(url).then((res) => {
         if (res.status != "200") {
-            cambiarImagen("../src/pokemon-sad.gif")
+            cambiarImagen("https://media.tenor.com/WUEKqaYhVsUAAAAC/pokemon-sad.gif")
             cambiarNombre("COULD NOT BE FOUND") 
         }
         else {
