@@ -20,9 +20,17 @@ body{
     z-index: 1;
 }
 body>h1{
-    margin-bottom: 30px;
-    font-size: 32px;
+    margin-top: -80px;
+    margin-bottom: -30px;
+    font-size: 62px;
     z-index: inherit;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px #3264AF;
+    color: #FFCC01;
+}
+body>h1::first-letter{
+    font-size: 82px;
+    letter-spacing: -3px;
 }
 .fondo-video{
     width: 100vw;

@@ -1,0 +1,7 @@
+@font-face{
+    font-family: fuente-pokemon;
+    src: url(../src/Pokemon_Solid.ttf);
+}
+body>h1{
+    font-family: fuente-pokemon;
+}
